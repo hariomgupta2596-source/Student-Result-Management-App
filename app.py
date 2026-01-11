@@ -43,3 +43,12 @@ if st.button("Calculate Result"):
     df.to_csv("Student Marks Data.csv" , mode = "a" , index = False, header = False)
     
     st.success(f"Result Saved Successfully")
+
+st.subheader("Saved Student Records")
+
+try :
+    saved_df = pd.read_csv("Student Marks Data.csv")
+    st.dataframe(saved_df)
+except FileNotFoundError:
+    st.warning("No data saved yet")
+    
