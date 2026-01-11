@@ -31,12 +31,12 @@ if st.button("Calculate Result"):
     st.info(f"Congratulations on getting {Grade}")
         
     data = {
-        "Student Name" : name,
-        "Python Marks" : m,
-        "Statistics Marks" : n,
-        "Excel Marks" : o,
-        "OTDS Marks" : p,
-        "Practical Marks" : q,
+        "Student Name" : [name],
+        "Python Marks" : [m],
+        "Statistics Marks" : [n],
+        "Excel Marks" : [o],
+        "OTDS Marks" : [p],
+        "Practical Marks" : [q],
     }
     
     df = pd.DataFrame(data)
