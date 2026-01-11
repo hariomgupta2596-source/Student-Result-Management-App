@@ -28,7 +28,7 @@ if st.button("Calculate Result"):
     else :
         Grade = "Fail"
         
-    st.info(f"Congratulations on getting {Grade}")
+    st.info(f"Congratulations on getting {Grade} Grade")
         
     data = {
         "Student Name" : [name],
